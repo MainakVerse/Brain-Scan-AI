@@ -14,7 +14,7 @@ genai.configure(api_key=GEMINI_API_KEY)
 
 def get_gemini_response(prompt):
     """Fetch real-time response from Gemini API."""
-    model = genai.GenerativeModel("gemini-1.5-pro-latest")
+    model = genai.GenerativeModel("gemini-2.0-flash")
     response = model.generate_content(prompt)
     return response.text if response else "I'm unable to provide a response at the moment."
 
